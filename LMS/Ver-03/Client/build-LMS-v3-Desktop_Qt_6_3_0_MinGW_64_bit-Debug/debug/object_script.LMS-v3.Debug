@@ -1,0 +1,16 @@
+debug/main.o
+debug/Console.o
+debug/MianService.o
+debug/MainWidget.o
+debug/backstage.o
+debug/manage.o
+debug/navigation.o
+debug/packetinfo.o
+debug/sign.o
+debug/qrc_res.o
+debug/moc_mainwidget.o
+debug/moc_navigation.o
+debug/moc_packetinfo.o
+debug/moc_backstage.o
+debug/moc_signin.o
+debug/moc_manage.o
