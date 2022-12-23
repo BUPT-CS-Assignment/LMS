@@ -1,0 +1,8 @@
+0 2 Co.Ltd admin 20284 100-100-100 dest_01
+100 1 Admin admin 800 null null
+1001 0 user01 123123 820 85901 bupt123
+1002 0 null 123 800 null null
+1003 0 null 123 1170 null null
+1004 0 user4 1234 984 88910 bupt1004
+1000 0 null 123 0 null null
+1005 0 name 1234 55 tel addr

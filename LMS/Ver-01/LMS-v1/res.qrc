@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/background/send_detail.png</file>
+        <file>res/background/send_window.png</file>
+        <file>res/icon/button_search.png</file>
+        <file>res/icon/icon_address.png</file>
+        <file>res/icon/icon_go_back.png</file>
+        <file>res/icon/icon_list.png</file>
+        <file>res/icon/icon_packet_detail.png</file>
+        <file>res/icon/icon_scan_code.png</file>
+        <file>res/icon/icon_send_arrow.png</file>
+        <file>res/icon/icon_tel.png</file>
+        <file>res/icon/icon_user_image.png</file>
+        <file>res/icon/icon_userinfo.png</file>
+        <file>res/navigation/icon_check_packet.png</file>
+        <file>res/navigation/icon_check_packet_choose.png</file>
+        <file>res/navigation/icon_send_packet.png</file>
+        <file>res/navigation/icon_send_packet_choose.png</file>
+        <file>res/navigation/icon_user.png</file>
+        <file>res/navigation/icon_user_choose.png</file>
+        <file>res/title/title_close.png</file>
+        <file>res/title/title-minimize.png</file>
+        <file>res/icon/icon_window_title.png</file>
+    </qresource>
+</RCC>

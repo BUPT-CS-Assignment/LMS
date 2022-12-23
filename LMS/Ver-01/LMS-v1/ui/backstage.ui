@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BackStage</class>
+ <widget class="QWidget" name="BackStage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255,255,255);</string>
+  </property>
+  <widget class="QWidget" name="nav_bar" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>150</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(40,44,53);
+color:rgb(204,204,204);
+border:none;
+font: 600 11pt &quot;微软雅黑&quot;;</string>
+   </property>
+   <widget class="QPushButton" name="packet_page_select">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>150</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(66,181,130);
+color:rgb(255,255,255);</string>
+    </property>
+    <property name="text">
+     <string>快递信息</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sign_out_click">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>530</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:none;
+border:none;
+font: 700 10pt &quot;微软雅黑&quot;;
+color:rgb(204,204,204);</string>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="user_page_select">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>130</y>
+      <width>150</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>用户信息</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 28pt &quot;优设标题黑&quot;;
+color:rgb(204,204,204);</string>
+    </property>
+    <property name="text">
+     <string>LMS</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>0</y>
+     <width>881</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(236, 236, 236);</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page_packet">
+    <widget class="QPushButton" name="packet_search_refresh">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>50</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background-color:rgb(227,192,104);
+color: rgb(255, 255, 255);
+font: 700 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Refresh</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="packet_search_choose">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+	background-color:rgb(255,255,255);
+	border:2px solid rgb(67,180,136);
+	border-radius:1px;
+	font: 600 10pt &quot;微软雅黑&quot;;
+	color:rgb(67,180,136);
+}
+
+QComboBox::drop-down{
+	border:none;
+	font: 600 10pt &quot;微软雅黑&quot;;
+	color:rgb(67,180,136);
+}
+
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>运单号</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>收件人</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>收件时间</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>寄件时间</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>寄件人</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>运输中</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>已签收</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="packet_search_input">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>50</y>
+       <width>621</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(255,255,255);
+border:1px solid rgb(204,204,204);
+padding-left:8px;
+font: 600 10pt &quot;微软雅黑&quot;;
+color: rgb(127, 127, 127);</string>
+     </property>
+     <property name="placeholderText">
+      <string>搜索</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="packet_list">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>851</width>
+       <height>477</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid rgb(204,204,204);
+background-color:rgb(255,255,255);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="packet_search_click">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>50</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background-color:rgb(67,180,136);
+color: rgb(255, 255, 255);
+font: 700 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>881</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-bottom:1px solid rgb(204, 204, 204);
+font: 700 10pt &quot;微软雅黑&quot;;
+color: rgb(103, 103, 103);</string>
+     </property>
+     <property name="text">
+      <string>    PACKET-BACKSTAGE</string>
+     </property>
+    </widget>
+    <zorder>packet_search_refresh</zorder>
+    <zorder>packet_search_input</zorder>
+    <zorder>packet_list</zorder>
+    <zorder>label_2</zorder>
+    <zorder>packet_search_choose</zorder>
+    <zorder>packet_search_click</zorder>
+   </widget>
+   <widget class="QWidget" name="page_user">
+    <widget class="QTableWidget" name="user_list">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>851</width>
+       <height>477</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid rgb(204,204,204);
+background-color:rgb(255,255,255);</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="user_search_choose">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+	background-color:rgb(255,255,255);
+	border:2px solid rgb(67,180,136);
+	border-radius:1px;
+	font: 600 10pt &quot;微软雅黑&quot;;
+	color:rgb(67,180,136);
+}
+
+QComboBox::drop-down{
+	border:none;
+	font: 600 10pt &quot;微软雅黑&quot;;
+	color:rgb(67,180,136);
+}
+
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>用户名</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>姓名</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>电话</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>地址</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="user_search_input">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>50</y>
+       <width>631</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(255,255,255);
+border:1px solid rgb(204,204,204);
+padding-left:8px;
+font: 600 10pt &quot;微软雅黑&quot;;
+color: rgb(127, 127, 127);</string>
+     </property>
+     <property name="placeholderText">
+      <string>搜索</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="user_search_click">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>50</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background-color:rgb(67,180,136);
+color: rgb(255, 255, 255);
+font: 700 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="user_search_refresh">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>50</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background-color:rgb(227,192,104);
+color: rgb(255, 255, 255);
+font: 700 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Refresh</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>881</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-bottom:1px solid rgb(204, 204, 204);
+font: 700 10pt &quot;微软雅黑&quot;;
+color: rgb(103, 103, 103);</string>
+     </property>
+     <property name="text">
+      <string>    USER-BACKSTAGE</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
